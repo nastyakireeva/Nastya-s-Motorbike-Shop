@@ -1,0 +1,124 @@
+.homerow {
+    height: calc(100vh - 70px);
+    padding: 0;
+}
+
+.homerow .img {
+    background-image: url("../assets/moto.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.homerow .homerow__content {
+    background-color: rgba(100, 100, 100, 0.548);
+    height: 100%;
+    width: 100%;
+}
+
+.homerow__content__title {
+    display: flex;
+    display: 
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.borderless {
+    border-width: 0px;
+
+}
+
+.card_img_size {
+    height: 130px;
+}
+
+
+
+.card_txt_max_height {
+    /* hide text if it more than N lines  */
+    overflow: hidden;
+    /* for set '...' in absolute position */
+    position: relative; 
+    /* use this value to count block height */
+    line-height: 1.2em;
+    /* max-height = line-height (1.2) * lines max number (3) */
+    max-height: 130px; 
+    /* fix problem when last visible word doesn't adjoin right side  */
+    text-align: center;  
+    /* place for '...' */
+    font-size: 0.7rem;
+    margin-right: -1em;
+    padding-right: 1em;
+  }
+  /* create the ... */
+  .card_txt_max_height:before {
+    /* points in the end */
+    content: '...';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of block */
+    right: 0;
+    bottom: 0;
+  }
+  /* hide ... if we have text, which is less than or equal to max lines */
+.card_txt_max_height:after {
+    /* points in the end */
+    content: '';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of text */
+    right: 0;
+    /* set width and height */
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    /* bg color = bg color under block */
+    background: white;
+}
+
+.card_align-txt {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    justify-content: space-between
+}
+
+.testimonial-box img {
+    display: inline-block;
+    width: 90px;
+    height:90px;
+    border-radius: 50%;
+    margin: 0 0 15px;
+}
+.testimonial-box h4 {
+    color: gray;
+}
+.testimonial-box p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+.container {
+    text-align: center;
+    background-color: white;
+}
+
+.reviews-container {
+    background-color: white;
+}
+
+.w-100 {
+    width: 30%;
+}
+
+.footer {
+  height: 500px;
+  background: black;
+}

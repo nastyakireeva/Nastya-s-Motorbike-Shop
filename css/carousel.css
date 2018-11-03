@@ -1,0 +1,14 @@
+.carousel-container-data {
+height: 80vh;
+width: 100vw;
+background-color: white;
+display: flex;
+flex: row;
+align-items: center;
+justify-content: space-around;
+}
+
+.carousel-card {
+    border: none;
+}
+
