@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .homerow {
     height: calc(100vh - 70px);
     padding: 0;
@@ -19,7 +23,6 @@
 
 .homerow__content__title {
     display: flex;
-    display: 
     flex: 1;
     flex-direction: column;
     align-items: center;
@@ -95,7 +98,7 @@
     margin: 0 0 15px;
 }
 .testimonial-box h4 {
-    color: gray;
+    color: inherit; /*takes the color of the parent*/
 }
 .testimonial-box p {
     margin-bottom: 20px;
@@ -107,18 +110,78 @@
 
 .container {
     text-align: center;
-    background-color: white;
 }
 
-.reviews-container {
-    background-color: white;
+.container-reviews {
+    background-color:#545956;
+   color: white;
 }
+
+.review-title {
+    padding: 60px;
+}
+
+.header-container {
+    background-color: white;
+    margin-bottom: 0%;
+}
+
+.our-partners-title {
+padding: 0;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 35px;
+    width: 35px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 85%, 80%;
+    border-radius: 50%;
+    border: 0cm;
+}
+
+
 
 .w-100 {
     width: 30%;
 }
 
 .footer {
-  height: 500px;
-  background: black;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #212529;
+    padding: 20px 100px;
+    color:darkgray;
+    text-align: center;
+}
+
+/*Floating Back-To-Top Button*/
+.myBtn {
+    position: fixed;
+    bottom: 60px;
+    float: right;
+    right: 10%;
+    left: 90%;
+    color: darkgray;
+    font-size: 70px;
+    border-color: transparent;
+    background-color: transparent;
+   
+}
+a {
+    color: darkgray;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/*On Hover Color Change*/
+.myBtn:hover {
+    background-color: transparent;
+    color: grey;
+    border-color: transparent;
+}
+
+.section {
+    height: 100vh !important;
 }

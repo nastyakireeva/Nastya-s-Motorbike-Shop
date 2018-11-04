@@ -6,6 +6,7 @@ display: flex;
 flex: row;
 align-items: center;
 justify-content: space-around;
+padding: 93px;
 }
 
 .carousel-card {
